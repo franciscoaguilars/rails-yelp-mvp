@@ -48,3 +48,4 @@ gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem "autoprefixer-rails"
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+gem 'faker', '~> 2.13'
