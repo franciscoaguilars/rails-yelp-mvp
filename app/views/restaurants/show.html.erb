@@ -3,4 +3,11 @@
 <h4><%= @restaurant.phone_number %></h2>
 <h4>Category: <%= @restaurant.category %></h2>
 
+<ul class="list-group">
+    <% @restaurant.reviews.each do |review| %>
+        <li class="list-group-item"><%= review.content %></li>
+    <% end %>
+</ul>
+
+<h5><%= link_to "Leave a Review :-)" , new_restaurant_review_path(@restaurant) %></h5>
 <%= link_to "Go to home.", restaurants_path %>
